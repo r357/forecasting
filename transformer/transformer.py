@@ -1,3 +1,4 @@
+import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import *
 from tensorflow.keras.layers import *
@@ -41,10 +42,6 @@ class SingleAttention(Layer):
 
 
 
-
-
-
-
 class MultiAttention(Layer):
   def __init__(self, d_k, d_v, n_heads):
     super(MultiAttention, self).__init__()
@@ -69,9 +66,6 @@ class MultiAttention(Layer):
     concat_attn = tf.concat(attn, axis=-1)
     multi_linear = self.linear(concat_attn)
     return multi_linear
-
-
-
 
 
 
