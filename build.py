@@ -68,3 +68,9 @@ history = model.fit(X_train, Y_train,
 model = tf.keras.models.load_model()
 
 
+
+
+
+
+# CHECK THIS
+# https://github.com/huseinzol05/Stock-Prediction-Models/blob/master/output/attention-is-all-you-need.png

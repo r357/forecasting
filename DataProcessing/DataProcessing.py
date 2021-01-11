@@ -52,3 +52,4 @@ def PrepData(ticker, seq_len):
 
   return (X_train, Y_train, X_val, Y_val, X_test, Y_test)
 
+
