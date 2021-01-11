@@ -30,7 +30,10 @@ model = tf.keras.models.load_model('./models/Transformer+TimeEmbedding.hdf5',
                                                    'MultiAttention': MultiAttention,
                                                    'TransformerEncoder' :TransformerEncoder})
 model.summary()
-
+tf.keras.utils.plot_model(
+  model,
+  to_file='./modelplot.png',
+  show_shapes=True, show_layer_names=True)
 
 
 
